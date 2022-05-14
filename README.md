@@ -8,7 +8,7 @@ Note that this repository is called "rtow4d" but when compiled it will appear as
 
 The original code can be found in the 'original' directory. The very slightly modified verison can be found in the 'rtow' directory. The only changes were to remove compiler warnings and errors due to the integration into C4D.
 
-This has not be optimized in anyway. 
+This has not been optimized at all.
 
 It was intended to just use the source code directly, as-is, in C4D and integrate it so that it can be used to render out images and also have an interactive viewport for realtime editing of objects and material parameters. It is more of an experiment to see how to create a basic renderer with realtime feedback via multi-threaded progressive rendering. 
 
