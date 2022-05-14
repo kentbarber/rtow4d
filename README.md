@@ -14,7 +14,7 @@ It was intended to just use the source code directly, as-is, in C4D and integrat
 
 The codebase can also show how to use basic jobs and multi-threading, VideoPost plugin for adding a renderer to C4D and how to add and use a custom material.
 
-Be warned that right now it is a nasty mix of Cinema 4D memory allocation and also the standard lib (std::make_shared). So you will most likely get a crash warnings if you shut down C4D while it is rendering. If you really wanted to fix this you would re-write the entire RTOW codebase using C4D datastructures and memory allocations.
+Be warned that right now it is a nasty mix of Cinema 4D memory allocation and the standard lib (std::make_shared). So you will most likely get crash warnings if you shut down C4D while it is rendering. If you really wanted to fix this you would re-write the entire RTOW codebase using C4D datastructures and memory allocations.
 
 ## Currently supports the following
 - Supports Spheres, Cubes and Cylinders that are individual objects in the scene.
