@@ -1,0 +1,24 @@
+// Supported platforms - can be [Win64;OSX]
+Platform=Win64;OSX
+
+// Type of project - can be [Lib;DLL;App]
+Type=DLL
+
+// API dependencies
+APIS=cinema.framework;misc.framework;core.framework;
+
+// C4D component
+C4D=true
+
+stylecheck.level=0
+//stylecheck.enum-registration=false
+//stylecheck.enum-class=false
+
+// Windows
+Exclude.Win=/original/;
+
+// OS X
+Exclude.OSX=/original/;
+
+// Custom ID
+ModuleId=com.gamelogicdesign.rtow4d

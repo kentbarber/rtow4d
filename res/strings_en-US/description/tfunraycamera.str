@@ -1,0 +1,6 @@
+STRINGTABLE Tfunraycamera
+{
+	Tfunraycamera			"FunRay Camera";
+	
+	FUNRAY_CAMERA_APERATURE "Aperature";	
+}

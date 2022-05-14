@@ -1,0 +1,12 @@
+STRINGTABLE VPfunray
+{
+	VPfunray						"FunRay Renderer";
+	VP_FUNRAY_SAMPLES				"Samples Per Pixel";
+	VP_FUNRAY_MAXDEPTH				"Max Depth";
+	
+	VP_FUNRAY_RENDERMODE_VIEWPORT	"Viewport Render Mode";
+	VP_FUNRAY_RENDERMODE_SINGLETHREAD  "Single Threaded";
+	VP_FUNRAY_RENDERMODE_MULTITHREAD   "Multi Threaded";
+	VP_FUNRAY_RENDERMODE_SINGLETHREAD_PROGRESSIVE "Single Threaded Progressive";
+	VP_FUNRAY_RENDERMODE_MULTITHREAD_PROGRESSIVE "Multi Threaded Progressive";
+}
