@@ -22,11 +22,16 @@ Additional help
 - Maxon Development Website: https://developers.maxon.net/
 - C4D C++ Development Help: https://developers.maxon.net/docs/Cinema4DCPPSDK/html/index.html
 
+---
+
 C4D Integration
+
 ![RTOW](https://plugins4d.com/img/funray/fr_movingcamera.gif)
 
 This picture shows rendering to the viewport and the picture viewer. The spinning movie was renderered directly out of Cinema 4D as an mp4 file. It is not real time.
+
 ![RTOW Render](https://plugins4d.com/img/funray/fr_videopost.gif)
 
 This 1280x720 image took 12 minutes to render. F-Stop of 0.8, 400 samples per pixel and Max Depth of 50. Rendered on a 10 core i7.
+
 ![RTOW Render2](https://plugins4d.com/img/funray/funray_400_samples_1280.jpg)
