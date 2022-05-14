@@ -16,9 +16,8 @@ Note that this repository is called "rtow4d" but when compiled it will appear as
 
 Be warned that right now it is a nasty mix of Cinema 4D memory allocation and also the standard lib (std::make_shared). So you will most likely get a crash warnings if you close it down while it is rendering to the viewport or while the FunRay RenderView dialog is open and rendering. If you really wanted to fix this you would re-write the entire RTOW codebase using C4D datastructures and memory allocations.
 
-If you want to learn how to compile C++ plugins for Cinema 4D you could start by watching the first two tutorials here on youtube: https://www.youtube.com/playlist?list=PLEPTxkpDVvX0r292yn8xL39Cm3Wi3E69i
-
 Additional help
+- Learn how to compile C++ plugins for Cinema 4D by watching the first two tutorials here: https://www.youtube.com/playlist?list=PLEPTxkpDVvX0r292yn8xL39Cm3Wi3E69i
 - Maxon Development Support: https://plugincafe.maxon.net/
 - Maxon Development Website: https://developers.maxon.net/
 - C4D C++ Development Help: https://developers.maxon.net/docs/Cinema4DCPPSDK/html/index.html
