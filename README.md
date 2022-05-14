@@ -16,15 +16,39 @@ The codebase can also show how to use basic jobs and multi-threading, VideoPost 
 
 Be warned that right now it is a nasty mix of Cinema 4D memory allocation and also the standard lib (std::make_shared). So you will most likely get a crash warnings if you close it down while it is rendering to the viewport or while the FunRay RenderView dialog is open and rendering. If you really wanted to fix this you would re-write the entire RTOW codebase using C4D datastructures and memory allocations.
 
-Additional help
-- Learn how to compile C++ plugins for Cinema 4D by watching the first two tutorials here: https://www.youtube.com/playlist?list=PLEPTxkpDVvX0r292yn8xL39Cm3Wi3E69i
-- Maxon Development Support: https://plugincafe.maxon.net/
-- Maxon Development Website: https://developers.maxon.net/
-- C4D C++ Development Help: https://developers.maxon.net/docs/Cinema4DCPPSDK/html/index.html
+## Currently supports the following
+- Supports Spheres that are individual objects in the scene.
+- Custom Materials (Material Manager->Create->Extensions->FunRay Material)
+  - Metal
+  - Glass
+  - Lambert
+- Supported Camera Parameters
+  - Object Tab
+    - Focal Length
+    - Sensor Size
+    - Field of View (Horizontal)
+    - Field of View (Vertical)
+    - Focus Distance
+    - Use Target Object
+    - Focus Object
+  - Physical Tab
+    - F-Stop
+- Interactive Renderer View (Extensions->FunRay->FunRay RenderView)
+  - Interactive Preview
+  - Supports moving and adjusting camera parameters
+  - Supports editor camera and selected camera
+  - Supports moving objects
+  - Different Render modes
+    - Multi-Threaded: When enabled uses all your cores. When disabled uses a single core.
+    - Progressive: When enabled will continuously update. When disabled it will use the number of Samples as defined in the "RenderSettings->FunRay Renderer->Samples Per Pixel"
+- Render Settings dropdown to select the FunRay Renderer
+  - Samples Per Pixel: Number of samples per pixel when rendering to Picture Viewer or to File
+  - Max Depth
+  - Viewport Render Mode: Set what kind of rendering to do in the main C4D viewport, default is multi-threaded progressive
 
----
+## C4D Integration
 
-C4D Integration
+Realtime progressive updating in the RenderView.
 
 ![RTOW](https://plugins4d.com/img/funray/fr_movingcamera.gif)
 
@@ -35,3 +59,10 @@ This picture shows rendering to the viewport and the picture viewer. The spinnin
 This 1280x720 image took 12 minutes to render. F-Stop of 0.8, 400 samples per pixel and Max Depth of 50. Rendered on a 10 core i7.
 
 ![RTOW Render2](https://plugins4d.com/img/funray/funray_400_samples_1280.jpg)
+
+
+## Additional help
+- Learn how to compile C++ plugins for Cinema 4D by watching the first two tutorials here: https://www.youtube.com/playlist?list=PLEPTxkpDVvX0r292yn8xL39Cm3Wi3E69i
+- Maxon Development Support: https://plugincafe.maxon.net/
+- Maxon Development Website: https://developers.maxon.net/
+- C4D C++ Development Help: https://developers.maxon.net/docs/Cinema4DCPPSDK/html/index.html
