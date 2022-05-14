@@ -17,7 +17,7 @@ The codebase can also show how to use basic jobs and multi-threading, VideoPost 
 Be warned that right now it is a nasty mix of Cinema 4D memory allocation and also the standard lib (std::make_shared). So you will most likely get a crash warnings if you close it down while it is rendering to the viewport or while the FunRay RenderView dialog is open and rendering. If you really wanted to fix this you would re-write the entire RTOW codebase using C4D datastructures and memory allocations.
 
 ## Currently supports the following
-- Supports Spheres that are individual objects in the scene.
+- Supports Spheres, Cubes and Cylinders that are individual objects in the scene.
 - Custom Materials (Material Manager->Create->Extensions->FunRay Material)
   - Metal
   - Glass
